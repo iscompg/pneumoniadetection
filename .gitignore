@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Virtual environments
+venv/
+env/
+
+# Mac
+.DS_Store
+
+# Model files
+*.h5
+*.keras
+
+# Large datasets
+data/chest_xray/
+
+# VS Code
+.vscode/
