@@ -17,7 +17,7 @@ def predict_output(input_image):
     
     if probability_pneumonia>0.5:
         predicted_class='Pneumonia'
-        likelihood= "Highly Likelihood for Pneumonia"
+        likelihood= "High Likelihood for Pneumonia"
         confidence= probability_pneumonia*100
     elif 0.4<=probability_pneumonia<=0.6:
         predicted_class='Maybe Pneumonia'
@@ -28,6 +28,7 @@ def predict_output(input_image):
         likelihood= "Low Likelihood of Pneumonia"
         confidence= (1-probability_pneumonia)*100
     
+    confidence = min(confidence, 99.99)
     return {
     "predicted_class": predicted_class,
     "likelihood": likelihood,
