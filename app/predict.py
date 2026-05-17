@@ -10,9 +10,7 @@ model= load_model(model_path)
 def predict_output(input_image):
     
     preprocessed_image=preprocess_image_input(input_image)
-    
     prediction= model.predict(preprocessed_image)
-    
     probability_pneumonia= float(prediction[0][0])
     
     if probability_pneumonia>0.5:
@@ -29,6 +27,7 @@ def predict_output(input_image):
         confidence= (1-probability_pneumonia)*100
     
     confidence = min(confidence, 99.99)
+    
     return {
     "predicted_class": predicted_class,
     "likelihood": likelihood,
