@@ -10,7 +10,7 @@ Users can upload X-ray images through a Streamlit web app and receive:
 
 # Run Locally
 ```bash
-pip install -r requirements.txt<br>
+pip install -r requirements.txt
 streamlit run app/app.py
 ```
 
