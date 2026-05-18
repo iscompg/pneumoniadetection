@@ -3,7 +3,16 @@ from tensorflow.keras.models import load_model
 from preprocess import preprocess_image_input
 
 
-model_path='../model/densenet_freeze.h5'
+import os
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+model_path = os.path.join(
+    BASE_DIR,
+    "..",
+    "model",
+    "densenet_freeze.h5"
+)
 model= load_model(model_path)
 
 
@@ -13,7 +22,7 @@ def predict_output(input_image):
     prediction= model.predict(preprocessed_image)
     probability_pneumonia= float(prediction[0][0])
     
-    if probability_pneumonia>0.5:
+    if probability_pneumonia>0.6:
         predicted_class='Pneumonia'
         likelihood= "High Likelihood for Pneumonia"
         confidence= probability_pneumonia*100

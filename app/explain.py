@@ -5,7 +5,17 @@ import tensorflow as tf
 from tensorflow.keras.models import load_model
 from preprocess import preprocess_image_input
 
-model_path="../model/densenet_freeze.h5"
+import os
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+model_path = os.path.join(
+    BASE_DIR,
+    "..",
+    "model",
+    "densenet_freeze.h5"
+)
+
 model= load_model(model_path)
 last_conv_layer= "conv5_block16_concat"
 
