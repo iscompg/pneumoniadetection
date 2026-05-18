@@ -8,14 +8,14 @@ Users can upload X-ray images through a Streamlit web app and receive:
 3. Likelihood estimation
 4. Grad-CAM visualization
 
-#Run Locally
+# Run Locally
 pip install -r requirements.txt
 streamlit run app/app.py
 
-#Live Demo
+# Live Demo
 https://pneumoniadetection-explainable-ai.streamlit.app
 
-#Author 
+# Author 
 Ishani Arora
 (iscompg)
 

@@ -93,5 +93,5 @@ st.warning(
     "This system is for AI-assisted analysis only "
     "and not a replacement for professional "
     "medical diagnosis. Please "
-    "reach out to a trusted health physician for the best diagnosis."
+    "reach out to a trusted health practitioner for the best diagnosis."
 )
