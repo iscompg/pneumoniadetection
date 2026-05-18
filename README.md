@@ -1,15 +1,23 @@
-# Pneumonia Detection using Deep Learning
+# Pneumonia Detection System with Explainable AI
 
-A CNN-based deep learning project that detects pneumonia from chest X-ray images.
+A deep learning project for pneumonia detection from chest X-ray images using DenseNet121 and Grad-CAM explainability.
 
-## Tech Stack
-- Python
-- TensorFlow/Keras
-- OpenCV
-- Flask
+Users can upload X-ray images through a Streamlit web app and receive:
+1. Predicted class
+2. Confidence score
+3. Likelihood estimation
+4. Grad-CAM visualization
 
-## Dataset
-Chest X-Ray Pneumonia Dataset from Kaggle
+#Run Locally
+pip install -r requirements.txt
+streamlit run app/app.py
 
-## Project Status
-Initial setup and preprocessing completed.
+#Live Demo
+https://pneumoniadetection-explainable-ai.streamlit.app
+
+#Author 
+Ishani Arora
+(iscompg)
+
+#Disclaimer
+This project is built for educational and research purposes only. It should not be used as a replacement for professional medical advice or diagnosis.
