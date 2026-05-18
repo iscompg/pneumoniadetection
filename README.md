@@ -9,15 +9,15 @@ Users can upload X-ray images through a Streamlit web app and receive:
 4. Grad-CAM visualization
 
 # Run Locally
-pip install -r requirements.txt
+pip install -r requirements.txt<br>
 streamlit run app/app.py
 
 # Live Demo
 https://pneumoniadetection-explainable-ai.streamlit.app
 
 # Author 
-Ishani Arora
+Ishani Arora<br>
 (iscompg)
 
-#Disclaimer
-This project is built for educational and research purposes only. It should not be used as a replacement for professional medical advice or diagnosis.
+# Disclaimer
+This project is built for educational and research purposes only. It should not be used as a replacement for professional medical diagnosis.
