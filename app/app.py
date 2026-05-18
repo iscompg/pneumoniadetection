@@ -92,6 +92,6 @@ if uploaded_file is not None:
 st.warning(
     "This system is for AI-assisted analysis only "
     "and not a replacement for professional "
-    "medical diagnosis. Please"
-    "reach out to a trusted health physician."
+    "medical diagnosis. Please "
+    "reach out to a trusted health physician for the best diagnosis."
 )
